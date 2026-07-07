@@ -10,25 +10,28 @@
       "iconPath": "./assets/folder-open.svg"
     },
     "_ring": {
-      "iconPath": "./assets/ring.svg"
+      "iconPath": "./assets/ring.png"
     },
     "_tails": {
-      "iconPath": "./assets/tails.svg"
+      "iconPath": "./assets/tails.png"
     },
     "_sonic": {
-      "iconPath": "./assets/sonic.svg"
+      "iconPath": "./assets/sonic.png"
     },
     "_emerald": {
-      "iconPath": "./assets/emerald.svg"
+      "iconPath": "./assets/emerald.png"
     },
-    "_hill": {
-      "iconPath": "./assets/hill.svg"
+    "_knuckles": {
+      "iconPath": "./assets/knuckles.png"
     },
     "_shoe": {
-      "iconPath": "./assets/shoe.svg"
+      "iconPath": "./assets/shoe.png"
     },
-    "_chaos": {
-      "iconPath": "./assets/chaos.svg"
+    "_amy": {
+      "iconPath": "./assets/amy.png"
+    },
+    "_shadow": {
+      "iconPath": "./assets/shadow.png"
     }
   },
   "file": "_file",
@@ -47,15 +50,17 @@
     "tsx": "_sonic",
     "json": "_emerald",
     "jsonc": "_emerald",
-    "html": "_hill",
-    "htm": "_hill",
+    "html": "_knuckles",
+    "htm": "_knuckles",
     "css": "_shoe",
     "scss": "_shoe",
     "sass": "_shoe",
     "less": "_shoe",
-    "py": "_chaos",
+    "py": "_amy",
     "vue": "_sonic",
-    "svelte": "_sonic"
+    "svelte": "_sonic",
+    "yaml": "_shadow",
+    "yml": "_shadow"
   },
   "fileNames": {
     "package.json": "_emerald",
@@ -75,9 +80,10 @@
     "typescript": "_sonic",
     "markdown": "_tails",
     "json": "_emerald",
-    "html": "_hill",
+    "html": "_knuckles",
     "css": "_shoe",
-    "python": "_chaos"
+    "python": "_amy",
+    "yaml": "_shadow"
   },
   "hidesExplorerArrows": false
 }

@@ -2,7 +2,7 @@
   "name": "sonic-theme",
   "displayName": "Sonic Theme",
   "description": "Tema visual inspirado em Sonic the Hedgehog — color themes e file icons customizados",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "publisher": "AndreLuizJPoles",
   "license": "MIT",
   "repository": {
@@ -45,9 +45,11 @@
     ]
   },
   "scripts": {
+    "icons:transparent": "node scripts/make-icons-transparent.mjs",
     "package": "vsce package"
   },
   "devDependencies": {
-    "@vscode/vsce": "^3.2.1"
+    "@vscode/vsce": "^3.2.1",
+    "sharp": "^0.33.5"
   }
 }

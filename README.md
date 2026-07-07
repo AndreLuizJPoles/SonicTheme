@@ -2,8 +2,6 @@
 
 Tema visual para VS Code inspirado em **Sonic the Hedgehog** — com color themes e file icons customizados usando as cores clássicas: azul Sonic, vermelho, dourado dos anéis e verde Emerald Hill.
 
-> **Disclaimer:** Este é um projeto de fã não oficial. Sonic the Hedgehog é propriedade da SEGA. Os ícones são arte original minimalista inspirada no universo Sonic, sem uso de assets oficiais.
-
 ## O que está incluído
 
 ### Color Themes
@@ -15,12 +13,18 @@ Tema visual para VS Code inspirado em **Sonic the Hedgehog** — com color theme
 
 ### Paleta de cores
 
-| Cor | Hex | Uso |
-|-----|-----|-----|
-| Azul Sonic | `#1E5BFF` | Keywords, activity bar, acentos |
-| Vermelho Sonic | `#E52521` | Tags, erros, badges |
-| Dourado anel | `#FFD700` | Strings, números, cursor |
-| Verde Emerald Hill | `#2ECC71` | Comentários, imports |
+| Cor | Hex (Dark / Light) | Uso |
+|-----|---------------------|-----|
+| Azul Sonic | `#4D8CFF` / `#1E5BFF` | Keywords, activity bar, acentos |
+| Laranja coral | `#FF7A45` / `#D45A20` | Tags, erros, badges, git deleted |
+| Dourado anel | `#FFD700` / `#B8860B` | Strings, git modified |
+| Teal Emerald Hill | `#5BC8D4` / `#0E8A96` | Comentários |
+| Verde-água | `#3DDBA8` / `#0A9E6E` | Imports, git untracked |
+| Ciano função | `#7DD3FC` / `#0284C7` | Funções, chamadas |
+| Rosa-salmão | `#FF9EAA` / `#C43D52` | Tipos, classes |
+| Magenta | `#FF6B9D` / `#CC4488` | Booleanos, regex |
+
+> **Acessibilidade:** A paleta foi ajustada na v0.2.0 para ser distinguível por pessoas com protanopia e deuteranopia. O vermelho-verde clássico foi substituído por laranja coral e teal, com diferenciação adicional via luminância e estilos de fonte (negrito, itálico, sublinhado). A identidade Sonic é preservada: azul, dourado dos anéis, teal de Emerald Hill e energia laranja.
 
 ### File Icon Theme — Sonic Icons
 
@@ -30,9 +34,10 @@ Tema visual para VS Code inspirado em **Sonic the Hedgehog** — com color theme
 | `.md`, `.mdx` | Tails | Documentação |
 | `.ts`, `.tsx` | Sonic | TypeScript / velocidade |
 | `.json`, `.jsonc` | Esmeralda | Chaos Emerald |
-| `.html`, `.htm` | Colina verde | Green Hill Zone |
+| `.html`, `.htm` | Knuckles | HTML |
 | `.css`, `.scss`, `.sass`, `.less` | Tênis | Speed shoes |
-| `.py` | Chaos | Chaos energy |
+| `.py` | Amy | Python |
+| `.yaml`, `.yml` | Shadow | Configuração |
 | `.vue`, `.svelte` | Sonic | Frameworks front-end |
 
 ## Instalação
@@ -57,7 +62,7 @@ npm install
 npm run package
 ```
 
-Isso gera `sonic-theme-0.1.0.vsix`. Instale com:
+Isso gera `sonic-theme-0.2.0.vsix`. Instale com:
 
 `Ctrl+Shift+P` → `Extensions: Install from VSIX...`
 
@@ -71,7 +76,9 @@ SonicTheme/
 │   └── sonic-light-color-theme.json
 ├── icons/
 │   ├── sonic-icon-theme.json
-│   └── assets/               # SVGs dos ícones
+│   └── assets/               # PNGs dos ícones + SVGs de pasta/arquivo
+├── scripts/
+│   └── make-icons-transparent.mjs
 └── .vscode/launch.json       # Debug F5
 ```
 
