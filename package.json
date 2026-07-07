@@ -1,0 +1,53 @@
+{
+  "name": "sonic-theme",
+  "displayName": "Sonic Theme",
+  "description": "Tema visual inspirado em Sonic the Hedgehog — color themes e file icons customizados",
+  "version": "0.1.0",
+  "publisher": "AndreLuizJPoles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AndreLuizJPoles/SonicTheme.git"
+  },
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "sonic",
+    "theme",
+    "color-theme",
+    "icon-theme",
+    "dark",
+    "light"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Sonic Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sonic-dark-color-theme.json"
+      },
+      {
+        "label": "Sonic Light",
+        "uiTheme": "vs",
+        "path": "./themes/sonic-light-color-theme.json"
+      }
+    ],
+    "iconThemes": [
+      {
+        "id": "sonic-icons",
+        "label": "Sonic Icons",
+        "path": "./icons/sonic-icon-theme.json"
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.2.1"
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "iconDefinitions": {
+    "_file": {
+      "iconPath": "./assets/file.svg"
+    },
+    "_folder": {
+      "iconPath": "./assets/folder.svg"
+    },
+    "_folder_open": {
+      "iconPath": "./assets/folder-open.svg"
+    },
+    "_ring": {
+      "iconPath": "./assets/ring.svg"
+    },
+    "_tails": {
+      "iconPath": "./assets/tails.svg"
+    },
+    "_sonic": {
+      "iconPath": "./assets/sonic.svg"
+    },
+    "_emerald": {
+      "iconPath": "./assets/emerald.svg"
+    },
+    "_hill": {
+      "iconPath": "./assets/hill.svg"
+    },
+    "_shoe": {
+      "iconPath": "./assets/shoe.svg"
+    },
+    "_chaos": {
+      "iconPath": "./assets/chaos.svg"
+    }
+  },
+  "file": "_file",
+  "folder": "_folder",
+  "folderExpanded": "_folder_open",
+  "rootFolder": "_folder",
+  "rootFolderExpanded": "_folder_open",
+  "fileExtensions": {
+    "js": "_ring",
+    "mjs": "_ring",
+    "cjs": "_ring",
+    "jsx": "_ring",
+    "md": "_tails",
+    "mdx": "_tails",
+    "ts": "_sonic",
+    "tsx": "_sonic",
+    "json": "_emerald",
+    "jsonc": "_emerald",
+    "html": "_hill",
+    "htm": "_hill",
+    "css": "_shoe",
+    "scss": "_shoe",
+    "sass": "_shoe",
+    "less": "_shoe",
+    "py": "_chaos",
+    "vue": "_sonic",
+    "svelte": "_sonic"
+  },
+  "fileNames": {
+    "package.json": "_emerald",
+    "tsconfig.json": "_sonic",
+    "README.md": "_tails",
+    "CHANGELOG.md": "_tails",
+    "LICENSE": "_file"
+  },
+  "folderNames": {
+    "src": "_folder",
+    "node_modules": "_folder",
+    "themes": "_folder",
+    "icons": "_folder"
+  },
+  "languageIds": {
+    "javascript": "_ring",
+    "typescript": "_sonic",
+    "markdown": "_tails",
+    "json": "_emerald",
+    "html": "_hill",
+    "css": "_shoe",
+    "python": "_chaos"
+  },
+  "hidesExplorerArrows": false
+}
