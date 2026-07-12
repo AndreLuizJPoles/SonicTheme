@@ -1,3 +1,18 @@
+Sonic-Inspired Theme — dual licensing
+=====================================
+
+This project uses two different license terms depending on the material.
+
+1. Code and color themes (MIT)
+------------------------------
+
+The following are licensed under the MIT License (full text below):
+
+- Extension source and configuration (e.g. package.json, scripts/)
+- Color theme JSON files under themes/
+- File icon theme mapping JSON under icons/ (not the image assets themselves)
+- Documentation and non-asset project files, except where noted otherwise
+
 MIT License
 
 Copyright (c) 2026 AndreLuizJPoles
@@ -19,3 +34,33 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+2. Character and franchise-inspired icon assets (restricted)
+------------------------------------------------------------
+
+Files under icons/assets/ that depict or are clearly based on Sonic the Hedgehog
+franchise characters, props, or symbols (including, without limitation, character
+PNG icons such as sonic, tails, knuckles, amy, shadow, rouge, cream, cheese,
+vanilla, silver, super, metal, blaze, espio, vector, charmy, big, jet, wave,
+storm, gamma, omega, chaos, emerl, tikal, marine, and any substantially similar
+derivatives) are fan-made artwork inspired by intellectual property owned by
+SEGA CORPORATION / SEGA of America, Inc.
+
+These assets are NOT licensed under the MIT License.
+
+You may:
+
+- Use this extension and its icon theme for personal, non-commercial purposes
+- Fork or modify the project for personal, non-commercial use, keeping this notice
+
+You may NOT:
+
+- Sell, license, or commercially redistribute these assets alone or as part of a
+  paid product
+- Claim ownership of SEGA's trademarks, characters, or related IP
+- Present this project or these assets as official SEGA / Sonic the Hedgehog
+  products or as endorsed by SEGA
+
+SEGA and Sonic the Hedgehog are trademarks of SEGA CORPORATION / SEGA of America,
+Inc. This project is unofficial fan content and is not affiliated with, endorsed,
+sponsored, or approved by SEGA.

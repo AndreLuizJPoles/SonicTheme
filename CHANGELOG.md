@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.4.0] - 2026-07-12
+
+### Changed
+
+- Ícones de arquivo: só artes de personagens (26); removidos anel, esmeralda e tênis
+- Remapeamento por cor/vibe (ex.: Tails→JS, Super→JSON, Metal→Rust, Chaos→SQL)
+
+## [0.3.0] - 2026-07-12
+
+### Changed
+
+- Nome da extensão e dos temas para **Sonic-Inspired** (projeto de fã, não oficial)
+- Licença dual: MIT para código/temas de cor; assets de personagem com uso não comercial
+- README e descrição da Marketplace com aviso explícito de IP / ausência de afiliação à SEGA
+- Extensão permanece gratuita, sem monetização
+
 ## [0.2.0] - 2026-07-06
 
 ### Changed

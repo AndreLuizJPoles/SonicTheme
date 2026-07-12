@@ -1,10 +1,10 @@
 {
-  "name": "sonic-theme",
-  "displayName": "Sonic Theme",
-  "description": "Tema visual inspirado em Sonic the Hedgehog — color themes e file icons customizados",
-  "version": "0.2.0",
+  "name": "sonic-inspired-theme",
+  "displayName": "Sonic-Inspired Theme",
+  "description": "Tema visual não oficial inspirado em Sonic the Hedgehog — color themes e file icons. Projeto de fã, gratuito, sem afiliação à SEGA.",
+  "version": "0.4.0",
   "publisher": "AndreLuizJPoles",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "repository": {
     "type": "git",
     "url": "https://github.com/AndreLuizJPoles/SonicTheme.git"
@@ -17,6 +17,8 @@
   ],
   "keywords": [
     "sonic",
+    "sonic-inspired",
+    "fan-theme",
     "theme",
     "color-theme",
     "icon-theme",
@@ -26,20 +28,20 @@
   "contributes": {
     "themes": [
       {
-        "label": "Sonic Dark",
+        "label": "Sonic-Inspired Dark",
         "uiTheme": "vs-dark",
         "path": "./themes/sonic-dark-color-theme.json"
       },
       {
-        "label": "Sonic Light",
+        "label": "Sonic-Inspired Light",
         "uiTheme": "vs",
         "path": "./themes/sonic-light-color-theme.json"
       }
     ],
     "iconThemes": [
       {
-        "id": "sonic-icons",
-        "label": "Sonic Icons",
+        "id": "sonic-inspired-icons",
+        "label": "Sonic-Inspired Icons",
         "path": "./icons/sonic-icon-theme.json"
       }
     ]

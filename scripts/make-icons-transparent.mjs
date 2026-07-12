@@ -1,22 +1,13 @@
 import sharp from 'sharp';
 import path from 'path';
-import { readFileSync, writeFileSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync } from 'fs';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ASSETS_DIR = path.join(__dirname, '..', 'icons', 'assets');
 
-const ICON_THRESHOLDS = {
-  sonic: 35,
-  ring: 35,
-  tails: 35,
-  shoe: 35,
-  knuckles: 35,
-  amy: 35,
-  emerald: 40,
-  shadow: 40,
-};
-
+const DEFAULT_THRESHOLD = 35;
+const CHAOS_THRESHOLD = 28;
 const FEATHER = 15;
 
 function rgbDistance(r1, g1, b1, r2, g2, b2) {
@@ -48,15 +39,14 @@ function sampleBackground(data, width, height, channels) {
   return { r: r / 4, g: g / 4, b: b / 4 };
 }
 
-async function loadIcon(name) {
-  const filePath = path.join(ASSETS_DIR, `${name}.png`);
+async function loadIcon(filePath) {
   const input = readFileSync(filePath);
   const { data, info } = await sharp(input)
     .ensureAlpha()
     .raw()
     .toBuffer({ resolveWithObject: true });
 
-  return { name, filePath, data: Buffer.from(data), info };
+  return { filePath, data: Buffer.from(data), info };
 }
 
 function processPixels({ data, info, threshold }) {
@@ -91,14 +81,17 @@ async function saveIcon({ filePath, data, info }) {
 }
 
 async function main() {
-  const icons = Object.keys(ICON_THRESHOLDS);
-  const loaded = await Promise.all(icons.map(loadIcon));
+  const files = readdirSync(ASSETS_DIR).filter((f) => f.endsWith('.png'));
+  const loaded = await Promise.all(
+    files.map((f) => loadIcon(path.join(ASSETS_DIR, f))),
+  );
 
   for (const icon of loaded) {
-    const threshold = ICON_THRESHOLDS[icon.name];
+    const name = path.basename(icon.filePath, '.png');
+    const threshold = name === 'chaos' ? CHAOS_THRESHOLD : DEFAULT_THRESHOLD;
     const bg = processPixels({ ...icon, threshold });
     console.log(
-      `Processed ${icon.name}.png (bg: rgb(${Math.round(bg.r)}, ${Math.round(bg.g)}, ${Math.round(bg.b)}), threshold: ${threshold})`,
+      `Processed ${name}.png (bg: rgb(${Math.round(bg.r)}, ${Math.round(bg.g)}, ${Math.round(bg.b)}), threshold: ${threshold})`,
     );
   }
 
@@ -106,7 +99,7 @@ async function main() {
     await saveIcon(icon);
   }
 
-  console.log(`\nDone. Processed ${icons.length} icons.`);
+  console.log(`\nDone. Processed ${files.length} icons.`);
 }
 
 main().catch((err) => {
