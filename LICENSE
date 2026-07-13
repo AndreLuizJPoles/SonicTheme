@@ -1,6 +1,10 @@
 Sonic-Inspired Theme — dual licensing
 =====================================
 
+This project is free, non-profit fan content: no charge to use the extension,
+no paid tier, and no commercial monetization of SEGA's intellectual property.
+It is unofficial and not affiliated with SEGA.
+
 This project uses two different license terms depending on the material.
 
 1. Code and color themes (MIT)
@@ -8,7 +12,7 @@ This project uses two different license terms depending on the material.
 
 The following are licensed under the MIT License (full text below):
 
-- Extension source and configuration (e.g. package.json, scripts/)
+- Extension source and configuration (e.g. package.json, extension.js, scripts/)
 - Color theme JSON files under themes/
 - File icon theme mapping JSON under icons/ (not the image assets themselves)
 - Documentation and non-asset project files, except where noted otherwise
@@ -38,6 +42,11 @@ SOFTWARE.
 2. Character and franchise-inspired icon assets (restricted)
 ------------------------------------------------------------
 
+NON-PROFIT / FREE FAN CONTENT: The project as a whole — including these assets
+as distributed with this extension — is provided free of charge for non-profit,
+non-commercial fan use. There is no paid version of this extension and no
+authorization to use these assets (or SEGA's IP) for commercial purposes.
+
 Files under icons/assets/ that depict or are clearly based on Sonic the Hedgehog
 franchise characters, props, or symbols (including, without limitation, character
 PNG icons such as sonic, tails, knuckles, amy, shadow, rouge, cream, cheese,
@@ -57,6 +66,8 @@ You may NOT:
 
 - Sell, license, or commercially redistribute these assets alone or as part of a
   paid product
+- Charge for access to this extension or these assets, or use them in any
+  commercial product, service, or monetized distribution
 - Claim ownership of SEGA's trademarks, characters, or related IP
 - Present this project or these assets as official SEGA / Sonic the Hedgehog
   products or as endorsed by SEGA

@@ -1,10 +1,11 @@
 {
   "name": "sonic-inspired-theme",
   "displayName": "Sonic-Inspired Theme",
-  "description": "Tema visual não oficial inspirado em Sonic the Hedgehog — color themes e file icons. Projeto de fã, gratuito, sem afiliação à SEGA.",
-  "version": "0.4.0",
+  "description": "Unofficial Sonic the Hedgehog–inspired VS Code theme — four Command Palette modes (Dark/Light × with or without character icons). Free fan project, non-profit, not affiliated with SEGA.",
+  "version": "0.7.4",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
+  "main": "./extension.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AndreLuizJPoles/SonicTheme.git"
@@ -25,7 +26,41 @@
     "dark",
     "light"
   ],
+  "activationEvents": [
+    "onCommand:sonic-inspired.chooseMode",
+    "onCommand:sonic-inspired.darkWithIcons",
+    "onCommand:sonic-inspired.lightWithIcons",
+    "onCommand:sonic-inspired.darkColorsOnly",
+    "onCommand:sonic-inspired.lightColorsOnly"
+  ],
   "contributes": {
+    "commands": [
+      {
+        "command": "sonic-inspired.chooseMode",
+        "title": "Choose Mode…",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.darkWithIcons",
+        "title": "Full Dark (colors + icons)",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.lightWithIcons",
+        "title": "Full Light (colors + icons)",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.darkColorsOnly",
+        "title": "Dark colors only",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.lightColorsOnly",
+        "title": "Light colors only",
+        "category": "Sonic-Inspired"
+      }
+    ],
     "themes": [
       {
         "label": "Sonic-Inspired Dark",
