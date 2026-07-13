@@ -2,7 +2,7 @@
   "name": "sonic-inspired-theme",
   "displayName": "Sonic-Inspired Theme",
   "description": "Unofficial Sonic the Hedgehog–inspired VS Code theme — four Command Palette modes (Dark/Light × with or without character icons). Free fan project, non-profit, not affiliated with SEGA.",
-  "version": "0.7.4",
+  "version": "1.0.0",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
   "main": "./extension.js",

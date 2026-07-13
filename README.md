@@ -40,7 +40,7 @@ You can still set colors and icons separately (`Ctrl+K Ctrl+T` and `Preferences:
 | Salmon pink | `#FF9EAA` / `#C43D52` | Types, classes |
 | Magenta | `#FF6B9D` / `#CC4488` | Booleans, regex |
 
-Since v0.2.0 the palette aims to stay clearer for people with protanopia or deuteranopia — coral orange and teal instead of classic red/green, plus luminance and font styles — without losing the blue / ring / Emerald Hill vibe.
+The palette aims to stay clearer for people with protanopia or deuteranopia — coral orange and teal instead of classic red/green, plus luminance and font styles — without losing the blue / ring / Emerald Hill vibe.
 
 ## File Icon Theme — Sonic-Inspired Icons
 
@@ -95,7 +95,7 @@ npm install
 npm run package
 ```
 
-This produces `sonic-inspired-theme-0.7.4.vsix`. Install with:
+This produces `sonic-inspired-theme-1.0.0.vsix`. Install with:
 
 `Ctrl+Shift+P` / `Cmd+Shift+P` → `Extensions: Install from VSIX...`
 
