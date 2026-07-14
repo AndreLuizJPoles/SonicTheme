@@ -1,21 +1,19 @@
 # Changelog
 
-## [1.1.0] - 2026-07-13
+## [1.0.0] - 2026-07-13
 
-### Added
+First stable release. Unofficial, free, non-profit fan theme for Visual Studio Code / Cursor. Not affiliated with SEGA.
 
-- Character file icon theme (26 icons)
-- Command Palette: Choose Mode…, Full Dark/Light, Dark/Light colors only
-- Published full package to Visual Studio Marketplace
+### Included
 
-## [1.0.4] - 2026-07-13
+- **Sonic-Inspired Dark** and **Sonic-Inspired Light** color themes
+- **Sonic-Inspired Icons** — 26 character file icons
+- **Command Palette** modes (`Ctrl+Shift+P` / `Cmd+Shift+P` → Sonic-Inspired):
+  - Choose Mode…
+  - Full Dark / Full Light (colors + character icons)
+  - Dark / Light colors only (colors + default editor icons)
+- Dual license (MIT for code and color themes; restricted non-commercial use for character PNG assets)
 
-### Changed
+### Install
 
-- Marketplace documentation; dual LICENSE in repo
-
-## [1.0.3] - 2026-07-13
-
-### Added
-
-- First Marketplace publish (color themes only; full assets followed in 1.1.0)
+Extensions → search **Sonic-Inspired Theme**, then run **Sonic-Inspired: Choose Mode…**

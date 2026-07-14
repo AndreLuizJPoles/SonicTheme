@@ -1,4 +1,4 @@
-# Sonic-Inspired Theme
+# Sonic Inspired Theme
 
 Unofficial fan theme for Visual Studio Code / Cursor — color themes plus character file icons. Free, non-profit, **not affiliated with SEGA**.
 
@@ -31,10 +31,10 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 
 ### Marketplace
 
-1. Extensions → search **Sonic-Inspired Theme**
+1. Extensions → search **Sonic Inspired Theme**
 2. Install → `Ctrl+Shift+P` → **Sonic-Inspired: Choose Mode…**
 
-https://marketplace.visualstudio.com/items?itemName=AndreLuizJPoles.sonic-inspired-theme
+https://marketplace.visualstudio.com/items?itemName=AndreLuizJPoles.sonicinspired-theme
 
 ### Local development
 
@@ -43,7 +43,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonic-inspired-theme-1.1.0.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.0.0.vsix`.
 
 ## License
 
@@ -51,5 +51,5 @@ Dual — see [LICENSE](LICENSE): MIT for code/themes; non-commercial restriction
 
 ## Links
 
-- Marketplace: https://marketplace.visualstudio.com/items?itemName=AndreLuizJPoles.sonic-inspired-theme
+- Marketplace: https://marketplace.visualstudio.com/items?itemName=AndreLuizJPoles.sonicinspired-theme
 - Repository: https://github.com/AndreLuizJPoles/SonicTheme
