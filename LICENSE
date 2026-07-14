@@ -48,12 +48,9 @@ non-commercial fan use. There is no paid version of this extension and no
 authorization to use these assets (or SEGA's IP) for commercial purposes.
 
 Files under icons/assets/ that depict or are clearly based on Sonic the Hedgehog
-franchise characters, props, or symbols (including, without limitation, character
-PNG icons such as sonic, tails, knuckles, amy, shadow, rouge, cream, cheese,
-vanilla, silver, super, metal, blaze, espio, vector, charmy, big, jet, wave,
-storm, gamma, omega, chaos, emerl, tikal, marine, and any substantially similar
-derivatives) are fan-made artwork inspired by intellectual property owned by
-SEGA CORPORATION / SEGA of America, Inc.
+franchise characters (PNG character icons and substantially similar derivatives)
+are fan-made artwork inspired by intellectual property owned by SEGA CORPORATION /
+SEGA of America, Inc.
 
 These assets are NOT licensed under the MIT License.
 
@@ -75,3 +72,6 @@ You may NOT:
 SEGA and Sonic the Hedgehog are trademarks of SEGA CORPORATION / SEGA of America,
 Inc. This project is unofficial fan content and is not affiliated with, endorsed,
 sponsored, or approved by SEGA.
+
+Note: The Visual Studio Marketplace package may ship color themes only. Character
+PNG icons remain in the GitHub repository for local / VSIX installs.

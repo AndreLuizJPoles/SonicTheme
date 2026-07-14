@@ -9,4 +9,6 @@ scripts/**
 **/*.mjs
 .cursor/**
 agent-tools/**
-extension.js
+*.full.json
+icon-src.svg
+LICENSE.dual.bak

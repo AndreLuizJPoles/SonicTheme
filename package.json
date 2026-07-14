@@ -1,11 +1,12 @@
 {
   "name": "sonic-inspired-theme",
   "displayName": "Sonic-Inspired Theme",
-  "description": "Unofficial fan color themes and file icons inspired by classic blue hedgehog aesthetics. Free, non-profit, not affiliated with SEGA.",
-  "version": "1.0.2",
+  "description": "Unofficial fan color themes and character file icons. Four Command Palette modes (Dark/Light × with or without icons). Free, non-profit, not affiliated with SEGA.",
+  "version": "1.1.0",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "icon.png",
+  "main": "./extension.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/AndreLuizJPoles/SonicTheme.git"
@@ -26,10 +27,44 @@
     "icon-theme",
     "dark",
     "light",
-    "fan-theme",
-    "sonic-inspired"
+    "sonic-inspired",
+    "fan-theme"
+  ],
+  "activationEvents": [
+    "onCommand:sonic-inspired.chooseMode",
+    "onCommand:sonic-inspired.darkWithIcons",
+    "onCommand:sonic-inspired.lightWithIcons",
+    "onCommand:sonic-inspired.darkColorsOnly",
+    "onCommand:sonic-inspired.lightColorsOnly"
   ],
   "contributes": {
+    "commands": [
+      {
+        "command": "sonic-inspired.chooseMode",
+        "title": "Choose Mode…",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.darkWithIcons",
+        "title": "Full Dark (colors + icons)",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.lightWithIcons",
+        "title": "Full Light (colors + icons)",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.darkColorsOnly",
+        "title": "Dark colors only",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.lightColorsOnly",
+        "title": "Light colors only",
+        "category": "Sonic-Inspired"
+      }
+    ],
     "themes": [
       {
         "label": "Sonic-Inspired Dark",
@@ -52,7 +87,8 @@
   },
   "scripts": {
     "icons:transparent": "node scripts/make-icons-transparent.mjs",
-    "package": "vsce package"
+    "package": "vsce package",
+    "package:marketplace": "node scripts/package-marketplace.mjs"
   },
   "devDependencies": {
     "@vscode/vsce": "^3.2.1",
