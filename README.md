@@ -43,7 +43,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonicinspired-theme-1.0.0.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.0.1.vsix`.
 
 ## License
 

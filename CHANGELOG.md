@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.1] - 2026-07-13
+
+### Changed
+
+- Marketplace extension icon now uses Sonic artwork (`icons/assets/sonic.png` → square `icon.png`)
+
 ## [1.0.0] - 2026-07-13
 
 First stable release. Unofficial, free, non-profit fan theme for Visual Studio Code / Cursor. Not affiliated with SEGA.
@@ -16,4 +22,4 @@ First stable release. Unofficial, free, non-profit fan theme for Visual Studio C
 
 ### Install
 
-Extensions → search **Sonic-Inspired Theme**, then run **Sonic-Inspired: Choose Mode…**
+Extensions → search **Sonic Inspired Theme**, then run **Sonic-Inspired: Choose Mode…**
