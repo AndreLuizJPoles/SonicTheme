@@ -12,7 +12,7 @@ This project uses two different license terms depending on the material.
 
 The following are licensed under the MIT License (full text below):
 
-- Extension source and configuration (e.g. package.json, extension.js, scripts/)
+- Extension source and configuration (e.g. package.json, scripts/)
 - Color theme JSON files under themes/
 - File icon theme mapping JSON under icons/ (not the image assets themselves)
 - Documentation and non-asset project files, except where noted otherwise

@@ -1,15 +1,19 @@
 {
   "name": "sonic-inspired-theme",
   "displayName": "Sonic-Inspired Theme",
-  "description": "Unofficial Sonic the Hedgehog–inspired VS Code theme — four Command Palette modes (Dark/Light × with or without character icons). Free fan project, non-profit, not affiliated with SEGA.",
-  "version": "1.0.0",
+  "description": "Unofficial fan color themes and file icons inspired by classic blue hedgehog aesthetics. Free, non-profit, not affiliated with SEGA.",
+  "version": "1.0.2",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
-  "main": "./extension.js",
+  "icon": "icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/AndreLuizJPoles/SonicTheme.git"
   },
+  "bugs": {
+    "url": "https://github.com/AndreLuizJPoles/SonicTheme/issues"
+  },
+  "homepage": "https://github.com/AndreLuizJPoles/SonicTheme#readme",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -17,50 +21,15 @@
     "Themes"
   ],
   "keywords": [
-    "sonic",
-    "sonic-inspired",
-    "fan-theme",
     "theme",
     "color-theme",
     "icon-theme",
     "dark",
-    "light"
-  ],
-  "activationEvents": [
-    "onCommand:sonic-inspired.chooseMode",
-    "onCommand:sonic-inspired.darkWithIcons",
-    "onCommand:sonic-inspired.lightWithIcons",
-    "onCommand:sonic-inspired.darkColorsOnly",
-    "onCommand:sonic-inspired.lightColorsOnly"
+    "light",
+    "fan-theme",
+    "sonic-inspired"
   ],
   "contributes": {
-    "commands": [
-      {
-        "command": "sonic-inspired.chooseMode",
-        "title": "Choose Mode…",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.darkWithIcons",
-        "title": "Full Dark (colors + icons)",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.lightWithIcons",
-        "title": "Full Light (colors + icons)",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.darkColorsOnly",
-        "title": "Dark colors only",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.lightColorsOnly",
-        "title": "Light colors only",
-        "category": "Sonic-Inspired"
-      }
-    ],
     "themes": [
       {
         "label": "Sonic-Inspired Dark",

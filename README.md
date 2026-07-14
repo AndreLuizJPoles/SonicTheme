@@ -4,21 +4,18 @@ An unofficial fan theme for Visual Studio Code, inspired by the classic look of 
 
 It started as a way to code with a visual identity that nods to that franchise, without claiming to be official. It is free, non-profit, and meant for anyone who wants the editor to feel a little more fun.
 
-## Four modes
+## Four usage modes
 
-Easiest path: open the **Command Palette** (`Ctrl+Shift+P` / `Cmd+Shift+P` on macOS) and type `Sonic-Inspired`.
+Color themes and file icon themes are separate in VS Code / Cursor. Combine them like this:
 
-| Command | What it applies |
-|---------|-----------------|
-| **Sonic-Inspired: Choose Mode…** | Pick one of the four modes from a menu |
-| **Full Dark (colors + icons)** | Dark theme + character file icons |
-| **Full Light (colors + icons)** | Light theme + character file icons |
-| **Dark colors only** | Dark theme + default VS Code icons (Seti / previous) |
-| **Light colors only** | Light theme + default VS Code icons (Seti / previous) |
+| Mode | Color Theme (`Ctrl+K Ctrl+T`) | File Icon Theme |
+|------|-------------------------------|-----------------|
+| Full Dark | **Sonic-Inspired Dark** | **Sonic-Inspired Icons** |
+| Full Light | **Sonic-Inspired Light** | **Sonic-Inspired Icons** |
+| Dark colors only | **Sonic-Inspired Dark** | Seti / None (default) |
+| Light colors only | **Sonic-Inspired Light** | Seti / None (default) |
 
-You can still set colors and icons separately (`Ctrl+K Ctrl+T` and `Preferences: File Icon Theme`) if you prefer.
-
-> **Note:** `Ctrl+K Ctrl+T` only changes colors. To turn character icons on or off, use the **Sonic-Inspired** commands above (or File Icon Theme → **Sonic-Inspired Icons** vs **Seti** / **None**).
+Commands: `Preferences: File Icon Theme` (or Command Palette → **File Icon Theme**).
 
 ## Color Themes
 
@@ -86,7 +83,7 @@ Character icons mapped by color and feel (optional — turn them on or off via t
    ```
 2. Open the folder in VS Code
 3. Press **F5** to launch the Extension Development Host
-4. In that window: `Ctrl+Shift+P` / `Cmd+Shift+P` → type `Sonic-Inspired` → **Choose Mode…** (or pick a mode directly)
+4. In that window: `Ctrl+K Ctrl+T` → **Sonic-Inspired Dark** or **Light**, then File Icon Theme → **Sonic-Inspired Icons** (or Seti for colors only)
 
 ### Install from VSIX
 
@@ -95,7 +92,7 @@ npm install
 npm run package
 ```
 
-This produces `sonic-inspired-theme-1.0.0.vsix`. Install with:
+This produces `sonic-inspired-theme-1.0.2.vsix`. Install with:
 
 `Ctrl+Shift+P` / `Cmd+Shift+P` → `Extensions: Install from VSIX...`
 
@@ -112,7 +109,7 @@ This is a **fan project**: **free** and **non-profit**. There is no paid version
 ```
 SonicTheme/
 ├── package.json              # Extension manifest
-├── extension.js              # Commands for the four modes
+├── icon.png                  # Marketplace icon (256×256)
 ├── LICENSE                   # Dual license (MIT + restricted assets)
 ├── themes/
 │   ├── sonic-dark-color-theme.json

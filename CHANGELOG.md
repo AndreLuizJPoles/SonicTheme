@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.0.2] - 2026-07-13
+
+### Changed
+
+- Marketplace package is a **pure theme** (color + icon themes only) — no runtime JS that rewrites editor settings (avoids “suspicious content” false positives)
+- Added square `icon.png` (256×256) for Marketplace metadata
+- README documents the four modes via Color Theme + File Icon Theme pickers
+
+## [1.0.1] - 2026-07-13
+
+### Fixed
+
+- Marketplace packaging: exclude build `scripts/` from the VSIX
+- Mode commands no longer write `.vscode/settings.json` on disk (settings API only) to avoid “suspicious content” false positives
+
 ## [1.0.0] - 2026-07-13
 
 First stable release. Unofficial, free, non-profit fan theme for Visual Studio Code / Cursor.
