@@ -2,17 +2,15 @@
 
 Unofficial fan theme for Visual Studio Code / Cursor — color themes plus character file icons. Free, non-profit, **not affiliated with SEGA**.
 
-## Four modes (`Ctrl+Shift+P` / `Cmd+Shift+P`)
+## Themes (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 
 Type **Sonic-Inspired**:
 
 | Command | Applies |
 |---------|---------|
-| **Choose Mode…** | Quick pick of the four modes |
-| **Full Dark (colors + icons)** | Dark + character icons |
-| **Full Light (colors + icons)** | Light + character icons |
-| **Dark colors only** | Dark + default editor icons (Seti) |
-| **Light colors only** | Light + default editor icons (Seti) |
+| **Choose Theme…** | Quick pick of Sonic / Tails · Dark / Light |
+| **Sonic Dark** / **Sonic Light** | Sonic color theme |
+| **Tails Dark** / **Tails Light** | Tails color theme |
 
 You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme** → **Sonic-Inspired Icons**.
 
@@ -22,6 +20,8 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 |-------|-------------|
 | **Sonic-Inspired Dark** | Navy background, blue accents, gold highlights |
 | **Sonic-Inspired Light** | Pale-blue background, same semantic palette |
+| **Sonic-Inspired Tails Dark** | Warm charcoal, amber accents, azure highlights |
+| **Sonic-Inspired Tails Light** | Cream background, darkened amber + azure (colorblind-friendly) |
 
 ## File icons
 
@@ -32,7 +32,7 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 ### Marketplace
 
 1. Extensions → search **Sonic Inspired Theme**
-2. Install → `Ctrl+Shift+P` → **Sonic-Inspired: Choose Mode…**
+2. Install → `Ctrl+Shift+P` → **Sonic-Inspired: Choose Theme…**
 
 https://marketplace.visualstudio.com/items?itemName=AndreLuizJPoles.sonicinspired-theme
 
@@ -43,7 +43,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonicinspired-theme-1.0.1.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.1.0.vsix`.
 
 ## License
 

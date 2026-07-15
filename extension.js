@@ -2,89 +2,86 @@ const vscode = require("vscode");
 
 const COLOR_DARK = "Sonic-Inspired Dark";
 const COLOR_LIGHT = "Sonic-Inspired Light";
-const ICON_CHARACTERS = "sonic-inspired-icons";
-const ICON_DEFAULT = "vs-seti";
-const PREV_ICON_KEY = "sonicInspired.previousIconTheme";
+const COLOR_TAILS_DARK = "Sonic-Inspired Tails Dark";
+const COLOR_TAILS_LIGHT = "Sonic-Inspired Tails Light";
 
 const MODES = [
   {
-    command: "sonic-inspired.darkWithIcons",
-    label: "Full Dark",
-    description: "Sonic-Inspired Dark + character icons",
-    colorTheme: COLOR_DARK,
-    useCharacterIcons: true,
-  },
-  {
-    command: "sonic-inspired.lightWithIcons",
-    label: "Full Light",
-    description: "Sonic-Inspired Light + character icons",
-    colorTheme: COLOR_LIGHT,
-    useCharacterIcons: true,
-  },
-  {
     command: "sonic-inspired.darkColorsOnly",
-    label: "Dark colors only",
-    description: "Sonic-Inspired Dark + default VS Code icons",
+    label: "Sonic Dark",
+    description: "Sonic-Inspired Dark",
     colorTheme: COLOR_DARK,
-    useCharacterIcons: false,
   },
   {
     command: "sonic-inspired.lightColorsOnly",
-    label: "Light colors only",
-    description: "Sonic-Inspired Light + default VS Code icons",
+    label: "Sonic Light",
+    description: "Sonic-Inspired Light",
     colorTheme: COLOR_LIGHT,
-    useCharacterIcons: false,
+  },
+  {
+    command: "sonic-inspired.tailsDarkColorsOnly",
+    label: "Tails Dark",
+    description: "Sonic-Inspired Tails Dark",
+    colorTheme: COLOR_TAILS_DARK,
+  },
+  {
+    command: "sonic-inspired.tailsLightColorsOnly",
+    label: "Tails Light",
+    description: "Sonic-Inspired Tails Light",
+    colorTheme: COLOR_TAILS_LIGHT,
   },
 ];
 
 /**
- * @param {vscode.ExtensionContext} context
+ * Apply a color theme so Workspace overrides cannot keep an old theme stuck.
  * @param {string} colorTheme
- * @param {boolean} useCharacterIcons
  */
-async function applyMode(context, colorTheme, useCharacterIcons) {
+async function applyMode(colorTheme) {
   const config = vscode.workspace.getConfiguration("workbench");
-  const currentIcon = config.get("iconTheme");
+  const inspect = config.inspect("colorTheme");
 
-  let iconTheme;
-  if (useCharacterIcons) {
-    if (
-      typeof currentIcon === "string" &&
-      currentIcon !== ICON_CHARACTERS
-    ) {
-      await context.globalState.update(PREV_ICON_KEY, currentIcon);
+  try {
+    if (inspect?.workspaceFolderValue !== undefined) {
+      await config.update(
+        "colorTheme",
+        undefined,
+        vscode.ConfigurationTarget.WorkspaceFolder,
+      );
     }
-    iconTheme = ICON_CHARACTERS;
-  } else {
-    const previous = context.globalState.get(PREV_ICON_KEY);
-    iconTheme =
-      typeof previous === "string" && previous !== ICON_CHARACTERS
-        ? previous
-        : ICON_DEFAULT;
+
+    if (vscode.workspace.workspaceFolders?.length) {
+      await config.update(
+        "colorTheme",
+        colorTheme,
+        vscode.ConfigurationTarget.Workspace,
+      );
+    }
+
+    await config.update(
+      "colorTheme",
+      colorTheme,
+      vscode.ConfigurationTarget.Global,
+    );
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    void vscode.window.showErrorMessage(
+      `Sonic-Inspired: could not apply theme (${message}).`,
+    );
+    return;
   }
 
-  await config.update("colorTheme", colorTheme, vscode.ConfigurationTarget.Global);
-  await config.update("iconTheme", iconTheme, vscode.ConfigurationTarget.Global);
+  const applied = vscode.workspace
+    .getConfiguration("workbench")
+    .get("colorTheme");
 
-  const iconsLabel = useCharacterIcons
-    ? "character icons"
-    : "default icons (no characters)";
-
-  void vscode.window
-    .showInformationMessage(
-      `Sonic-Inspired: ${colorTheme} + ${iconsLabel}.`,
-      "Open File Icon Theme",
-    )
-    .then((choice) => {
-      if (choice === "Open File Icon Theme") {
-        void vscode.commands.executeCommand("workbench.action.selectIconTheme");
-      }
-    });
-
-  const appliedIcon = config.get("iconTheme");
-  if (!useCharacterIcons && appliedIcon === ICON_CHARACTERS) {
-    await config.update("iconTheme", null, vscode.ConfigurationTarget.Global);
+  if (applied !== colorTheme) {
+    void vscode.window.showWarningMessage(
+      `Sonic-Inspired: asked for "${colorTheme}" but "${applied}" is still active. Open Ctrl+K Ctrl+T — if Tails is missing, restart the Extension Development Host (package.json themes only load on full relaunch).`,
+    );
+    return;
   }
+
+  void vscode.window.showInformationMessage(`Sonic-Inspired: ${colorTheme}.`);
 }
 
 /**
@@ -94,7 +91,7 @@ function activate(context) {
   for (const mode of MODES) {
     context.subscriptions.push(
       vscode.commands.registerCommand(mode.command, async () => {
-        await applyMode(context, mode.colorTheme, mode.useCharacterIcons);
+        await applyMode(mode.colorTheme);
       }),
     );
   }
@@ -108,8 +105,8 @@ function activate(context) {
           mode,
         })),
         {
-          title: "Sonic-Inspired — Choose Mode",
-          placeHolder: "Dark/Light, with character icons or default icons",
+          title: "Sonic-Inspired — Choose Theme",
+          placeHolder: "Sonic or Tails · Dark or Light",
         },
       );
 
@@ -117,11 +114,7 @@ function activate(context) {
         return;
       }
 
-      await applyMode(
-        context,
-        picked.mode.colorTheme,
-        picked.mode.useCharacterIcons,
-      );
+      await applyMode(picked.mode.colorTheme);
     }),
   );
 }

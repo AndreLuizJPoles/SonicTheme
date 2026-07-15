@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.1.0] - 2026-07-14
+
+### Added
+
+- **Sonic-Inspired Tails Dark** — warm charcoal background, amber accents, azure highlights
+- **Sonic-Inspired Tails Light** — cream background with darkened amber and azure for contrast
+- Both Tails themes use an amber–azure axis for colorblind-friendly coding (errors also use bold weight)
+- Command Palette themes for Tails Dark/Light, listed in **Choose Theme…**
+
+### Changed
+
+- Command Palette only switches color themes (no with/without icons variants); icons stay via **Preferences: File Icon Theme**
+
 ## [1.0.1] - 2026-07-13
 
 ### Changed
