@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.1] - 2026-07-18
+
+### Fixed
+
+- README demo image uses Markdown syntax so the GIF renders on the Visual Studio Marketplace Overview
+
 ## [1.2.0] - 2026-07-18 — Sonic Team Update
 
 Six color themes: **Sonic**, **Tails**, and **Knuckles** (Dark + Light each), selectable via **Sonic-Inspired: Choose Theme…**.
