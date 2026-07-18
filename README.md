@@ -60,7 +60,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonicinspired-theme-1.2.3.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.2.4.vsix`.
 
 ## License
 

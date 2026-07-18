@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.4] - 2026-07-18
+
+### Fixed
+
+- Ensure Open VSX / Cursor get an active release with the public CDN demo GIF (1.2.3 was published but stayed inactive on Open VSX)
+
 ## [1.2.3] - 2026-07-18
 
 ### Fixed
