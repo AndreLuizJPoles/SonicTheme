@@ -2,7 +2,7 @@
   "name": "sonicinspired-theme",
   "displayName": "Sonic Inspired Theme",
   "description": "Unofficial fan themes for VS Code / Cursor: Sonic, Tails, and Knuckles (Dark + Light each), plus character file icons. Free, non-profit, not affiliated with SEGA.",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "icon.png",

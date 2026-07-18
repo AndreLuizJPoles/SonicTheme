@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.3] - 2026-07-18
+
+### Fixed
+
+- README demo GIF uses a public CDN URL (`cdn.jsdelivr.net`) so it renders on Visual Studio Marketplace and Cursor/Open VSX
+- Repository visibility set to **public** so marketplace image hosting resolves
+
 ## [1.2.2] - 2026-07-18
 
 ### Fixed

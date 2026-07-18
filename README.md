@@ -4,7 +4,7 @@ Unofficial fan theme pack for Visual Studio Code / Cursor - **six color themes**
 
 > *Gotta go fast* - ship code like you're tearing through Green Hill Zone.
 
-![Sonic Team theme demo - color themes and character file icons](sonic-team-demo.png)
+![Sonic Team theme demo - color themes and character file icons](https://cdn.jsdelivr.net/gh/AndreLuizJPoles/SonicTheme@main/sonic-team-demo.gif)
 
 *Sonic Team Update* - Blue blur, two-tailed genius, and the guardian of Angel Island, right in your editor. Welcome to the next act.
 
@@ -60,7 +60,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonicinspired-theme-1.2.2.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.2.3.vsix`.
 
 ## License
 
