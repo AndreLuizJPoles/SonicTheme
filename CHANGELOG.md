@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.2] - 2026-07-18
+
+### Fixed
+
+- README demo uses PNG (`sonic-team-demo.png`) so the Overview image renders on Visual Studio Marketplace / Cursor (GIF relative paths were not displaying)
+
 ## [1.2.1] - 2026-07-18
 
 ### Fixed

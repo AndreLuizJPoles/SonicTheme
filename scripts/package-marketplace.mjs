@@ -18,14 +18,24 @@ const marketplacePkg = {
   ...pkg,
   version: pkg.version,
   description:
-    "Unofficial fan dark and light color themes with a blue, gold, and teal palette. Free and non-profit. Not affiliated with SEGA.",
+    "Unofficial fan color themes for VS Code: Sonic, Tails, and Knuckles (Dark + Light each). Free and non-profit. Not affiliated with SEGA.",
 };
 delete marketplacePkg.main;
 delete marketplacePkg.activationEvents;
 marketplacePkg.contributes = {
   themes: pkg.contributes.themes,
 };
-marketplacePkg.keywords = ["theme", "color-theme", "dark", "light", "blue", "sonic-inspired", "fan-theme"];
+marketplacePkg.keywords = [
+  "theme",
+  "color-theme",
+  "dark",
+  "light",
+  "sonic",
+  "tails",
+  "knuckles",
+  "sonic-inspired",
+  "fan-theme",
+];
 
 const marketplaceIgnore = `${ignoreBackup.trim()}
 extension.js
