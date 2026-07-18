@@ -1,8 +1,8 @@
 {
   "name": "sonicinspired-theme",
   "displayName": "Sonic Inspired Theme",
-  "description": "Unofficial fan color themes and character file icons. Sonic and Tails Command Palette modes (Dark/Light). Free, non-profit, not affiliated with SEGA.",
-  "version": "1.1.0",
+  "description": "Unofficial fan color themes and character file icons. Sonic, Tails, and Knuckles Command Palette modes (Dark/Light). Free, non-profit, not affiliated with SEGA.",
+  "version": "1.2.0",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "icon.png",
@@ -35,7 +35,9 @@
     "onCommand:sonic-inspired.darkColorsOnly",
     "onCommand:sonic-inspired.lightColorsOnly",
     "onCommand:sonic-inspired.tailsDarkColorsOnly",
-    "onCommand:sonic-inspired.tailsLightColorsOnly"
+    "onCommand:sonic-inspired.tailsLightColorsOnly",
+    "onCommand:sonic-inspired.knucklesDarkColorsOnly",
+    "onCommand:sonic-inspired.knucklesLightColorsOnly"
   ],
   "contributes": {
     "commands": [
@@ -63,6 +65,16 @@
         "command": "sonic-inspired.tailsLightColorsOnly",
         "title": "Tails Light",
         "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.knucklesDarkColorsOnly",
+        "title": "Knuckles Dark",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.knucklesLightColorsOnly",
+        "title": "Knuckles Light",
+        "category": "Sonic-Inspired"
       }
     ],
     "themes": [
@@ -85,6 +97,16 @@
         "label": "Sonic-Inspired Tails Light",
         "uiTheme": "vs",
         "path": "./themes/tails-light-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Knuckles Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/knuckles-dark-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Knuckles Light",
+        "uiTheme": "vs",
+        "path": "./themes/knuckles-light-color-theme.json"
       }
     ],
     "iconThemes": [

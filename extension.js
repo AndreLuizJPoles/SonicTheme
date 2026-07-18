@@ -4,6 +4,8 @@ const COLOR_DARK = "Sonic-Inspired Dark";
 const COLOR_LIGHT = "Sonic-Inspired Light";
 const COLOR_TAILS_DARK = "Sonic-Inspired Tails Dark";
 const COLOR_TAILS_LIGHT = "Sonic-Inspired Tails Light";
+const COLOR_KNUCKLES_DARK = "Sonic-Inspired Knuckles Dark";
+const COLOR_KNUCKLES_LIGHT = "Sonic-Inspired Knuckles Light";
 
 const MODES = [
   {
@@ -29,6 +31,18 @@ const MODES = [
     label: "Tails Light",
     description: "Sonic-Inspired Tails Light",
     colorTheme: COLOR_TAILS_LIGHT,
+  },
+  {
+    command: "sonic-inspired.knucklesDarkColorsOnly",
+    label: "Knuckles Dark",
+    description: "Sonic-Inspired Knuckles Dark",
+    colorTheme: COLOR_KNUCKLES_DARK,
+  },
+  {
+    command: "sonic-inspired.knucklesLightColorsOnly",
+    label: "Knuckles Light",
+    description: "Sonic-Inspired Knuckles Light",
+    colorTheme: COLOR_KNUCKLES_LIGHT,
   },
 ];
 
@@ -76,7 +90,7 @@ async function applyMode(colorTheme) {
 
   if (applied !== colorTheme) {
     void vscode.window.showWarningMessage(
-      `Sonic-Inspired: asked for "${colorTheme}" but "${applied}" is still active. Open Ctrl+K Ctrl+T — if Tails is missing, restart the Extension Development Host (package.json themes only load on full relaunch).`,
+      `Sonic-Inspired: asked for "${colorTheme}" but "${applied}" is still active. Open Ctrl+K Ctrl+T — if the theme is missing, restart the Extension Development Host (package.json themes only load on full relaunch).`,
     );
     return;
   }
@@ -106,7 +120,7 @@ function activate(context) {
         })),
         {
           title: "Sonic-Inspired — Choose Theme",
-          placeHolder: "Sonic or Tails · Dark or Light",
+          placeHolder: "Sonic, Tails or Knuckles · Dark or Light",
         },
       );
 

@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.2.0] - 2026-07-18
+
+### Added
+
+- **Sonic-Inspired Knuckles Dark** — deep red `#1A0608`, chrome `#D01212`, olive `#9AA85E`, peach strings `#FFE0C9`
+- **Sonic-Inspired Knuckles Light** — peach `#FFE0C9`, sidebar `#E4E2DE`, red `#B90C14`, olive `#6F7A3A`
+- Command Palette entries **Knuckles Dark** / **Knuckles Light** in **Choose Theme…**
+- Errors use red + bold (luminance/weight cues alongside the red–olive secondary axis)
+
 ## [1.1.0] - 2026-07-14
 
 ### Added

@@ -8,9 +8,10 @@ Type **Sonic-Inspired**:
 
 | Command | Applies |
 |---------|---------|
-| **Choose Theme…** | Quick pick of Sonic / Tails · Dark / Light |
+| **Choose Theme…** | Quick pick of Sonic / Tails / Knuckles · Dark / Light |
 | **Sonic Dark** / **Sonic Light** | Sonic color theme |
 | **Tails Dark** / **Tails Light** | Tails color theme |
+| **Knuckles Dark** / **Knuckles Light** | Knuckles color theme |
 
 You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme** → **Sonic-Inspired Icons**.
 
@@ -22,6 +23,8 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 | **Sonic-Inspired Light** | Pale-blue background, same semantic palette |
 | **Sonic-Inspired Tails Dark** | Deep yellow `#2A2400`, accent `#F1AF00`, blue `#1C98D1` |
 | **Sonic-Inspired Tails Light** | White/`#F5F5F5`, yellow `#F1AF00`, blue `#1C98D1` (CVD-friendly) |
+| **Sonic-Inspired Knuckles Dark** | Deep red `#1A0608`, chrome `#D01212`, olive `#9AA85E` |
+| **Sonic-Inspired Knuckles Light** | Peach `#FFE0C9`, red `#B90C14`, olive `#6F7A3A` |
 
 ## File icons
 
@@ -43,7 +46,7 @@ npm install
 npm run package
 ```
 
-Press **F5**, or install `sonicinspired-theme-1.1.0.vsix`.
+Press **F5**, or install `sonicinspired-theme-1.2.0.vsix`.
 
 ## License
 
