@@ -1,8 +1,8 @@
 {
   "name": "sonicinspired-theme",
   "displayName": "Sonic Inspired Theme",
-  "description": "Unofficial fan color themes and character file icons. Four Command Palette modes (Dark/Light × with or without icons). Free, non-profit, not affiliated with SEGA.",
-  "version": "1.0.1",
+  "description": "Unofficial fan themes for VS Code / Cursor: Sonic, Tails, and Knuckles (Dark + Light each), plus character file icons. Free, non-profit, not affiliated with SEGA.",
+  "version": "1.2.0",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
   "icon": "icon.png",
@@ -27,41 +27,56 @@
     "icon-theme",
     "dark",
     "light",
+    "sonic",
+    "tails",
+    "knuckles",
     "sonic-inspired",
     "fan-theme"
   ],
   "activationEvents": [
     "onCommand:sonic-inspired.chooseMode",
-    "onCommand:sonic-inspired.darkWithIcons",
-    "onCommand:sonic-inspired.lightWithIcons",
     "onCommand:sonic-inspired.darkColorsOnly",
-    "onCommand:sonic-inspired.lightColorsOnly"
+    "onCommand:sonic-inspired.lightColorsOnly",
+    "onCommand:sonic-inspired.tailsDarkColorsOnly",
+    "onCommand:sonic-inspired.tailsLightColorsOnly",
+    "onCommand:sonic-inspired.knucklesDarkColorsOnly",
+    "onCommand:sonic-inspired.knucklesLightColorsOnly"
   ],
   "contributes": {
     "commands": [
       {
         "command": "sonic-inspired.chooseMode",
-        "title": "Choose Mode…",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.darkWithIcons",
-        "title": "Full Dark (colors + icons)",
-        "category": "Sonic-Inspired"
-      },
-      {
-        "command": "sonic-inspired.lightWithIcons",
-        "title": "Full Light (colors + icons)",
+        "title": "Choose Theme…",
         "category": "Sonic-Inspired"
       },
       {
         "command": "sonic-inspired.darkColorsOnly",
-        "title": "Dark colors only",
+        "title": "Sonic Dark",
         "category": "Sonic-Inspired"
       },
       {
         "command": "sonic-inspired.lightColorsOnly",
-        "title": "Light colors only",
+        "title": "Sonic Light",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.tailsDarkColorsOnly",
+        "title": "Tails Dark",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.tailsLightColorsOnly",
+        "title": "Tails Light",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.knucklesDarkColorsOnly",
+        "title": "Knuckles Dark",
+        "category": "Sonic-Inspired"
+      },
+      {
+        "command": "sonic-inspired.knucklesLightColorsOnly",
+        "title": "Knuckles Light",
         "category": "Sonic-Inspired"
       }
     ],
@@ -75,6 +90,26 @@
         "label": "Sonic-Inspired Light",
         "uiTheme": "vs",
         "path": "./themes/sonic-light-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Tails Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/tails-dark-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Tails Light",
+        "uiTheme": "vs",
+        "path": "./themes/tails-light-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Knuckles Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/knuckles-dark-color-theme.json"
+      },
+      {
+        "label": "Sonic-Inspired Knuckles Light",
+        "uiTheme": "vs",
+        "path": "./themes/knuckles-light-color-theme.json"
       }
     ],
     "iconThemes": [
