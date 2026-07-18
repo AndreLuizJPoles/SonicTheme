@@ -12,6 +12,7 @@
 ### Changed
 
 - Command Palette only switches color themes (no with/without icons variants); icons stay via **Preferences: File Icon Theme**
+- Tails palette rebuilt around `#F1AF00` / `#1C98D1` / `#F5F5F5` / `#FFFFFF` / `#FF0000` — Dark editor deep yellow (`#2A2400`) + yellow chrome; Light white/gray with yellow accents (yellow–blue CVD axis; errors red + bold)
 
 ## [1.0.1] - 2026-07-13
 

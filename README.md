@@ -20,8 +20,8 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 |-------|-------------|
 | **Sonic-Inspired Dark** | Navy background, blue accents, gold highlights |
 | **Sonic-Inspired Light** | Pale-blue background, same semantic palette |
-| **Sonic-Inspired Tails Dark** | Warm charcoal, amber accents, azure highlights |
-| **Sonic-Inspired Tails Light** | Cream background, darkened amber + azure (colorblind-friendly) |
+| **Sonic-Inspired Tails Dark** | Deep yellow `#2A2400`, accent `#F1AF00`, blue `#1C98D1` |
+| **Sonic-Inspired Tails Light** | White/`#F5F5F5`, yellow `#F1AF00`, blue `#1C98D1` (CVD-friendly) |
 
 ## File icons
 

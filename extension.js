@@ -81,7 +81,7 @@ async function applyMode(colorTheme) {
     return;
   }
 
-  void vscode.window.showInformationMessage(`Sonic-Inspired: ${colorTheme}.`);
+  void vscode.window.showInformationMessage(`Applied: ${colorTheme}`);
 }
 
 /**
