@@ -1,7 +1,7 @@
 {
   "name": "sonicinspired-theme",
   "displayName": "Sonic Inspired Theme",
-  "description": "Unofficial fan color themes and character file icons. Sonic, Tails, and Knuckles Command Palette modes (Dark/Light). Free, non-profit, not affiliated with SEGA.",
+  "description": "Unofficial fan themes for VS Code / Cursor: Sonic, Tails, and Knuckles (Dark + Light each), plus character file icons. Free, non-profit, not affiliated with SEGA.",
   "version": "1.2.0",
   "publisher": "AndreLuizJPoles",
   "license": "SEE LICENSE IN LICENSE",
@@ -27,6 +27,9 @@
     "icon-theme",
     "dark",
     "light",
+    "sonic",
+    "tails",
+    "knuckles",
     "sonic-inspired",
     "fan-theme"
   ],

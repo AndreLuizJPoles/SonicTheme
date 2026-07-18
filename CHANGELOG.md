@@ -1,13 +1,29 @@
 # Changelog
 
-## [1.2.0] - 2026-07-18
+## [1.2.0] - 2026-07-18 — Sonic Team Update
+
+Six color themes: **Sonic**, **Tails**, and **Knuckles** (Dark + Light each), selectable via **Sonic-Inspired: Choose Theme…**.
 
 ### Added
 
 - **Sonic-Inspired Knuckles Dark** — deep red `#1A0608`, chrome `#D01212`, olive `#9AA85E`, peach strings `#FFE0C9`
 - **Sonic-Inspired Knuckles Light** — peach `#FFE0C9`, sidebar `#E4E2DE`, red `#B90C14`, olive `#6F7A3A`
-- Command Palette entries **Knuckles Dark** / **Knuckles Light** in **Choose Theme…**
-- Errors use red + bold (luminance/weight cues alongside the red–olive secondary axis)
+- Command Palette: **Knuckles Dark** / **Knuckles Light**
+
+### Included (team palette)
+
+| Character | Dark | Light |
+|-----------|------|-------|
+| Sonic | Navy + blue/gold | Pale blue |
+| Tails | Deep yellow `#2A2400` + `#F1AF00` / `#1C98D1` | White/`#F5F5F5` + yellow/blue |
+| Knuckles | Deep red + `#D01212` / `#9AA85E` | Peach `#FFE0C9` + red/olive |
+
+Tails and Knuckles keep a clear primary/secondary accent pair; errors use color **and bold** (friendlier for color vision deficiency).
+
+### Changed
+
+- Package description and README document all six themes
+- Command Palette lists Sonic / Tails / Knuckles (colors only; icons via **File Icon Theme**)
 
 ## [1.1.0] - 2026-07-14
 
@@ -45,4 +61,4 @@ First stable release. Unofficial, free, non-profit fan theme for Visual Studio C
 
 ### Install
 
-Extensions → search **Sonic Inspired Theme**, then run **Sonic-Inspired: Choose Mode…**
+Extensions → search **Sonic Inspired Theme**, then run **Sonic-Inspired: Choose Theme…**
