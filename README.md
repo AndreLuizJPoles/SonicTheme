@@ -1,6 +1,14 @@
 # Sonic Inspired Theme
 
-Unofficial fan theme pack for Visual Studio Code / Cursor — **six color themes** (Sonic, Tails, Knuckles × Dark/Light) plus character file icons. Free, non-profit, **not affiliated with SEGA**.
+Unofficial fan theme pack for Visual Studio Code / Cursor - **six color themes** (Sonic, Tails, Knuckles × Dark/Light) plus character file icons. Free, non-profit, **not affiliated with SEGA**.
+
+> *Gotta go fast* - ship code like you're tearing through Green Hill Zone.
+
+<p align="center">
+  <img src="./sonic-team-demo.gif" alt="Sonic Team theme demo - color themes and character file icons" width="900" />
+</p>
+
+*Sonic Team Update* - Blue blur, two-tailed genius, and the guardian of Angel Island, right in your editor. Welcome to the next act.
 
 ## Themes (`Ctrl+Shift+P` / `Cmd+Shift+P`)
 
@@ -15,6 +23,8 @@ Type **Sonic-Inspired**:
 
 You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme** → **Sonic-Inspired Icons**.
 
+You're too slow if you're still picking themes by hand every morning - use **Choose Theme…** and keep rolling.
+
 ## Color themes
 
 | Theme | Description |
@@ -28,9 +38,13 @@ You can also use `Ctrl+K Ctrl+T` for colors and **Preferences: File Icon Theme**
 
 Tails and Knuckles themes keep a clear primary/secondary accent pair and use **bold** on errors so status is not color-only (friendlier for color vision deficiency).
 
+Chaos Emerald tip: pair a color theme with **Sonic-Inspired Icons** for the full Adventure-era vibes.
+
 ## File icons
 
 26 character icons mapped by color/vibe (Tails→JS, Sonic→TS, Knuckles→HTML, Super→JSON, Metal→Rust, Chaos→SQL, …).
+
+No Badniks in the explorer - just the gang from Station Square to Radical Highway.
 
 ## Install
 
@@ -52,7 +66,7 @@ Press **F5**, or install `sonicinspired-theme-1.2.0.vsix`.
 
 ## License
 
-Dual — see [LICENSE](LICENSE): MIT for code/themes; non-commercial restriction for character PNGs.
+Dual - see [LICENSE](LICENSE): MIT for code/themes; non-commercial restriction for character PNGs.
 
 ## Links
 
